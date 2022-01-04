@@ -1,5 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:user) { User.new }
+
+  it 'does not have an id when first instantiated' do
+    expect(user.id).to be nil
+  end
 end
